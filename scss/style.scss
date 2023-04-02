@@ -1,7 +1,11 @@
 @import 'utilities/variables';
+@import "base/reset";
+@import "base/typo";
+@import "layout/header";
 @import 'utilities/mixins';
 @import 'utilities/functions';
 @import "layout/main-index";
 @import "layout/footer";
 
 /* media-querry*/
+@import "layout/media600px";
