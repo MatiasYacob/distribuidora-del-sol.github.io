@@ -1,0 +1,17 @@
+:root {
+    --colorfondo:rgb(255, 0, 0);
+    --colortexto:white;
+  }
+  
+  main {
+    background-color: none;
+    color: none;
+  }
+  
+
+
+#darkmode:checked ~  main {
+    background-color: var(--colorfondo);
+    color: var(--colortexto);
+  }
+

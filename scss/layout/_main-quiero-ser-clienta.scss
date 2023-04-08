@@ -1,0 +1,39 @@
+.main-quiero-ser-cliente {
+    .flexcliente {
+        background-color: none;
+        display: flex;
+        width: 100%;
+        background-color: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+
+        .requisitos {
+            margin-top: 50px;
+            padding: 10px;
+            font-size: large;
+            font-family: gemunu libre;
+            text-align: center;
+            border: 5px black solid;
+            height: fit-content;
+            width: 50%;
+            
+                h2 {
+                color: red;
+            }
+                .firma {
+                    font-family: titulo;
+                    font-size: 25px;
+                    float: right;
+                    margin-top: 60px;
+            }
+
+        }
+        .container{
+        margin: 10px;
+        width: 280px;
+        border: 2px black solid;
+        padding: 10px;
+        }
+    }
+}

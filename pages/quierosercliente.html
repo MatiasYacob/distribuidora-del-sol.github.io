@@ -15,8 +15,13 @@
 </head>
 
 <body>
+
     <header>
-        <div class="barra"><a class="registro" href="./register.html">Registro</a></div>
+
+        <div class="barra">
+            <input type="checkbox" onchange="document.body.classList.toggle('dark-mode')">DarkMode
+            <a class="registro" href="./register.html">Registro</a>
+        </div>
         <div class="barralogo">
             <h1>Distribuidora</h1>
             <a href="../index.html" class="enlace">
@@ -39,10 +44,16 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-quiero-ser-cliente">
         <div class="flexcliente">
-            <div class="requisitos"><p><h2>Atencion!</h2> Debido a una cuestion de logistica para ser cliente y poder acceder a nuestro catalogo web debera completar el siguiente formulario y esperar que se le de el alta en la pagina en las proximas 48hs habiles a partir del momento del envio.  <h1 class="firma">Distribuidora Del Sol</h1> </p> </div>
-            <section class="caja-registro grid-item3" >
+            <div class="requisitos">
+                <p>
+                <h2>Atencion!</h2> Debido a una cuestion de logistica para ser cliente y poder acceder a nuestro
+                catalogo web debera completar el siguiente formulario y esperar que se le de el alta en la pagina en las
+                proximas 48hs habiles a partir del momento del envio. <h1 class="firma">Distribuidora Del Sol</h1>
+                </p>
+            </div>
+            <section class="caja-registro grid-item3">
 
                 <div class="container mt-5">
                     <form class="needs-validation" novalidate>
@@ -55,33 +66,31 @@
                                 <label for="name" class="form-label">Nombre de la Empresa:</label>
                                 <input type="text" class="form-control" id="name" required>
                             </div>
-                        <div class="mb-3">
-                            <label for="direccion" class="form-label">Direccion:</label>
-                            <input type="direccion" class="form-control" id="email" required>
-                        </div>
-                </div>
-                <div class="mb-3">
-                    <label for="codigopostal" class="form-label">Codigo Postal:</label>
-                    <input type="Cuit" class="form-control"  required>
-                </div>
-                <div class="mb-3">
-                    <label for="numerotelefono" class="form-label">Numero de Telefono:</label>
-                    <input type="Cuit" class="form-control"  required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Cuit:</label>
-                    <input type="cuit" class="form-control"  required>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary">Enviar Formulario</button>
-                    <a href="../index.html" class="btn btn-primary">Cancelar</a>
-                    
-                    
-                
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Direccion:</label>
+                                <input type="direccion" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="codigopostal" class="form-label">Codigo Postal:</label>
+                                <input type="Cuit" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numerotelefono" class="form-label">Numero de Telefono:</label>
+                                <input type="Cuit" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Cuit:</label>
+                                <input type="cuit" class="form-control" required>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                                <a href="../index.html" class="btn btn-primary">Cancelar</a>
+                            </div>
                 </div>
         </div>
-        
-        
+
+
         </form>
         </div>
         <!-- Bootstrap JS -->
