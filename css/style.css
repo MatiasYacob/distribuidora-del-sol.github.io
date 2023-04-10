@@ -7,8 +7,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
-  box-sizing: content-box; }
+  list-style: none; }
 
 @font-face {
   font-family: 'titulo';
@@ -104,9 +103,7 @@ main {
 
 .main-contacto {
   display: flex;
-  align-items: top;
   justify-content: center;
-  background-color: none;
   padding: 20px; }
   .main-contacto .grid-container {
     display: flex;
