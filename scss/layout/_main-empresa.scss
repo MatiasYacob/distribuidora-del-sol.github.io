@@ -1,0 +1,16 @@
+/*Uso de Mixin*/
+.main-empresa {
+    padding: 10px;
+    
+    h1 {
+        
+        @include fuente('gemunu libre', 35px, bold, italic);
+    }
+
+    h2 {
+        @include fuente('gemunu libre', 24px,);
+    }
+    .mapa{
+        padding: 10px;
+    }
+}

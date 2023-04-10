@@ -1,17 +1,5 @@
 :root {
-    --colorfondo:rgb(255, 0, 0);
-    --colortexto:white;
+    --colorfondo:#333;
+    --colortexto:#f0f0f0;
+    --colorheader: hsl(60, 100%, 15%);
   }
-  
-  main {
-    background-color: none;
-    color: none;
-  }
-  
-
-
-#darkmode:checked ~  main {
-    background-color: var(--colorfondo);
-    color: var(--colortexto);
-  }
-

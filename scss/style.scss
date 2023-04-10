@@ -1,8 +1,9 @@
 @import 'utilities/variables';
 @import "base/reset";
 @import "base/typo";
-
+/*Header*/
 @import "layout/header";
+/*Mixins y functions*/
 @import 'utilities/mixins';
 @import 'utilities/functions';
 /*Mains*/
@@ -10,6 +11,7 @@
 @import "layout/main-register";
 @import "layout/main-contacto";
 @import "layout/main-quiero-ser-clienta";
+@import "layout/main-empresa";
 /*Footer*/
 @import "layout/footer";
 /*Dark Mode*/

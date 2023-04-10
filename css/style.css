@@ -1,14 +1,7 @@
 :root {
-  --colorfondo:rgb(255, 0, 0);
-  --colortexto:white; }
-
-main {
-  background-color: none;
-  color: none; }
-
-#darkmode:checked ~ main {
-  background-color: var(--colorfondo);
-  color: var(--colortexto); }
+  --colorfondo:#333;
+  --colortexto:#f0f0f0;
+  --colorheader: hsl(60, 100%, 15%); }
 
 * {
   padding: 0;
@@ -21,6 +14,7 @@ main {
   font-family: 'titulo';
   src: url("/assets/fonts/gantelline 2.otf"); }
 
+/*Header*/
 header div {
   width: 100%;
   height: 30px;
@@ -92,6 +86,7 @@ header nav {
         text-transform: uppercase;
         text-decoration: none; }
 
+/*Mixins y functions*/
 /*Mains*/
 main {
   height: 900px; }
@@ -163,6 +158,24 @@ main {
     border: 2px black solid;
     padding: 10px; }
 
+/*Uso de Mixin*/
+.main-empresa {
+  padding: 10px; }
+  .main-empresa h1 {
+    font-family: "gemunu libre";
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: normal; }
+  .main-empresa h2 {
+    font-family: "gemunu libre";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal; }
+  .main-empresa .mapa {
+    padding: 10px; }
+
 /*Footer*/
 footer {
   background-color: #000000;
@@ -173,6 +186,28 @@ footer {
   width: 100%; }
 
 /*Dark Mode*/
+/*BotonDarkMode*/
+header img {
+  border-radius: 50%;
+  height: 25px;
+  transition: 2s;
+  transform: rotate(0deg); }
+  header img:hover {
+    transform: scale(1.3) rotate(20deg);
+    cursor: pointer; }
+
+header .sol {
+  display: none; }
+
+header #darkmode {
+  display: none; }
+
+header #darkmode:checked + .darkmode .luna {
+  display: none; }
+
+header #darkmode:checked + .darkmode .sol {
+  display: block; }
+
 /* Estilos para el modo claro */
 body {
   background-color: #f0f0f0;
@@ -183,26 +218,29 @@ h1 {
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background-color: #333; }
+  background-color: var(--colorfondo); }
 
 body.dark-mode main {
   transition: 3s;
-  background-color: #222; }
+  background-color: var(--colorfondo); }
 
 body.dark-mode main {
-  color: #f0f0f0; }
+  color: var(--colortexto); }
 
 body.dark-mode main h1 {
-  color: #f0f0f0; }
+  color: var(--colortexto); }
 
 body.dark-mode main p {
-  color: #ccc; }
+  color: var(--colortexto); }
 
 body.dark-mode .barralogo {
-  background-color: #3b2d00; }
+  background-color: var(--colorheader); }
 
 body.dark-mode .barralogo h1 {
-  color: #f0f0f0; }
+  color: var(--colortexto); }
+
+body.dark-mode header p {
+  color: var(--colortexto); }
 
 /* media-querry*/
 @media (max-width: 800px) {
@@ -258,6 +296,12 @@ body.dark-mode .barralogo h1 {
           color: #ffffff; }
     header nav #check:checked ~ ul {
       left: 0; }
+  /*Darkmode del UL en mobile inicio*/
+  body.dark-mode {
+    background-color: var(--color-fondo); }
+    body.dark-mode nav ul {
+      background-color: var(--colorheader); }
+  /*Darkmode del UL en mobile fin*/
   .main-register {
     display: flex;
     flex-direction: column;
@@ -326,4 +370,19 @@ body.dark-mode .barralogo h1 {
       margin: 10px;
       width: 200px;
       border: 2px black solid;
-      padding: 10px; } }
+      padding: 10px; }
+  .main-empresa {
+    padding: 10px;
+    margin-top: 150px; }
+    .main-empresa h1 {
+      font-family: "gemunu libre";
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: normal; }
+    .main-empresa h2 {
+      font-family: "gemunu libre";
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: normal; } }

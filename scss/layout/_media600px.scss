@@ -67,6 +67,16 @@
         }
 
     }
+    /*Darkmode del UL en mobile inicio*/
+    body.dark-mode {
+        background-color:var(--color-fondo);
+        nav{
+        ul{
+            background-color: var(--colorheader);
+        }
+        }
+    }
+    /*Darkmode del UL en mobile fin*/
     .main-register {
         display: flex;
         flex-direction: column;
@@ -158,6 +168,18 @@
             border: 2px black solid;
             padding: 10px;
             }
+        }
+    }
+    .main-empresa {
+        padding: 10px;
+        margin-top: 150px;
+        h1 {
+            
+            @include fuente('gemunu libre', 25px, bold, italic);
+        }
+    
+        h2 {
+            @include fuente('gemunu libre', 15px,);
         }
     }
 }

@@ -1,8 +1,9 @@
-@mixin flex ($direction,$justify,$aling,$gap){
-display: flex;
-flex-direction: $direction;
-justify-content: $justify;
-align-items: $aling;
-gap: $gap;
-}
+@mixin fuente($font-family, $font-size, $font-weight: normal, $font-style: normal, $line-height: normal) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    line-height: $line-height;
+  }
+  
 // hay que declararlo en el style.scss para que funcione

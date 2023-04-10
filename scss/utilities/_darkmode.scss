@@ -1,3 +1,39 @@
+/*BotonDarkMode*/
+header{
+ 
+  img{
+    border-radius: 50%;    
+    height: 25px;
+    
+    transition: 2s;
+    transform: rotate(0deg);
+    &:hover{
+      transform:scale(1.3) rotate(20deg) ;
+      cursor: pointer;
+      
+    }
+  }
+
+  .sol {
+    display: none;
+  }
+  #darkmode{
+    display: none;
+  }
+
+  #darkmode:checked + .darkmode .luna {
+    display: none;
+    
+  }
+  #darkmode:checked + .darkmode .sol {
+    display:block;
+    
+
+  }
+ 
+}
+
+
 /* Estilos para el modo claro */
 body {
     background-color: #f0f0f0;
@@ -8,24 +44,29 @@ body {
   }
   /* Estilos para el modo oscuro */
   body.dark-mode {
-    background-color: #333;
+    background-color: var(--colorfondo);
+  
   }
   body.dark-mode main {
     transition: 3s;
-    background-color: #222;
+    background-color: var(--colorfondo);
   }
   body.dark-mode main  {
-    color: #f0f0f0;
+    color: var(--colortexto);
   }
   body.dark-mode main h1 {
-    color: #f0f0f0;
+    color: var(--colortexto);
 }
   body.dark-mode main p {
-    color: #ccc;
+    color: var(--colortexto);
   }
   body.dark-mode .barralogo{
-    background-color: #3b2d00;
+    background-color: var(--colorheader);
+    
   }
   body.dark-mode .barralogo h1 {
-    color: #f0f0f0;
+    color: var(--colortexto);
+}
+body.dark-mode header p {
+  color: var(--colortexto);
 }
