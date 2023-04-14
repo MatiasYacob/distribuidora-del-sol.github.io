@@ -41,9 +41,13 @@ header{
         
         }
         nav{
+            
             background: black;
             height: 80px;
             width: 100%;
+            .registronav{
+                display: none;
+            }
             .checkbtn {
                 font-size: 30px;
                 color: #fff;
@@ -51,7 +55,7 @@ header{
                 line-height: 80px;
                 margin-right: 40px;
                 cursor: pointer;
-                display: flex;
+                
             }
             .checkbtn{
                 display: none;
@@ -60,6 +64,14 @@ header{
                 display: none;
             }
             ul{
+                label{
+                    float: right;
+                    margin-top: 15px;
+                    margin-right: 50px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
                 margin-right: 20px;
                 li{
                     

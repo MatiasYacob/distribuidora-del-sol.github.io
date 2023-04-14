@@ -1,21 +1,21 @@
 /*BotonDarkMode*/
 header{
- 
-  img{
-    border-radius: 50%;    
-    height: 25px;
+  
+  .luna{
     
-    transition: 2s;
-    transform: rotate(0deg);
-    &:hover{
-      transform:scale(1.3) rotate(20deg) ;
-      cursor: pointer;
-      
-    }
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    
+    
   }
 
   .sol {
+    
     display: none;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
   }
   #darkmode{
     display: none;
