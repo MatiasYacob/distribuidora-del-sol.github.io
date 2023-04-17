@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="lavadero, filtros, lubricante, automotor, detailing, mayorista, fullcar, lubricentro, ">
+    <meta name="keywords"
+        content="lavadero, filtros, lubricante, automotor, detailing, mayorista, fullcar, lubricentro, ">
     <!-- Seo -->
 
-    <meta name="description" content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
+    <meta name="description"
+        content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
     <meta name="author" content="matiasyacob@hotmail.com">
     <meta name="copyright" content="Distribudora Del Sol">
     <meta name="robots" content="index">
@@ -17,11 +19,18 @@
     <meta property="og:title" content="Distribuidora Del Sol">
     <meta property="og:site_name" content="Distribuidora Del Sol Web">
     <meta property="og:url" content=https://distribuidoradelsol.000webhostapp.com/index.html>
-    <meta property="og:description" content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
+    <meta property="og:description"
+        content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/img/logotipo-distribuidora-del-sol.png">  
-    
+    <meta property="og:image" content="./assets/img/logotipo-distribuidora-del-sol.png">
+
     <title>Del Sol</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
     <link rel="shortcut icon" href="./assets/img/logotipo-distribuidora-del-sol.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +44,7 @@
 <body>
     <header>
         <div>
-            
+
             <a class="registro" href="./pages/register.html">Registro</a>
         </div>
         <div class="barralogo">
@@ -56,19 +65,47 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
                 <li><a href="./pages/quierosercliente.html">Quiero Ser Cliente</a></li>
                 <li><a href="./pages/catalogo.html">Catalogo</a></li>
-                <input  type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
+                <input type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
                 <label class="darkmode" for="darkmode">
-                    <img class="sol"  src="./assets/img/sol" alt="sol">
+                    <img class="sol" src="./assets/img/sol" alt="sol">
                     <img class="luna" src="./assets/img/luna.jpg" alt="luna">
                 </label>
             </ul>
         </nav>
     </header>
-<!-- Main -->
-    <main>
-        <section>
-            <h1></h1>
-        </section>
+    <!-- Main -->
+    <main class="main-index">
+        <div class="news-card">
+            <img src="./assets/img/cajasmayorista.jpg" alt="cajasmayorista">
+            <div class="news-info">
+                <h2>Queres ser cliente mayorista?</h2>
+                <p>Enterate de como podes acceder a nuestros catalogos mayoristas y disponer de un monton de productos!
+                </p>
+                <a href="./pages/quierosercliente.html" class="read-more">Leer más</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="carousel">
+                <div><img src="./assets/aceite-foto.jfif" /></div>
+                <div><img src="./assets/filtros-foto.jfif" /></div>
+                <div><img src="./assets/uso-profesional.jpg" /></div>
+            </div>
+            <div class="news-info">
+                <h2>Conoce Nuestros Productos</h2>
+                <p>Todo lo que necesitas para el mantenimiento de tu auto. Encontra en nuestras sucursales <strong>Lubricantes, Filtros, Lamparas, Cosmetica automotor y mucho mas! </strong>
+                </p>
+                <a href="./pages/quierosercliente.html" class="read-more">Ver Catalogo</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="./assets/img/cumple.jpg" alt="cumpleaños">
+            <div class="news-info">
+                <h2>Una Trayectoria de 25 años!</h2>
+                <p>Hace 25 años abriamos nuestras puertas por primera vez festeja esta ocacion con <strong>increibles
+                        promos!</strong> </p>
+                <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk" class="read-more" target="_blank">Promociones!</a>
+            </div>
+        </div>
     </main>
     <footer>
         Disclaimer: Termly Inc is not a lawyer or a law firm and does not engage in the practice of law or provide
@@ -76,7 +113,26 @@
         are for informational and self-help purposes only and are not intended to be a substitute for professional
         legal advice. Use of this site is subject to our Terms of Use.
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>

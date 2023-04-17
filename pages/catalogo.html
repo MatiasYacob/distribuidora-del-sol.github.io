@@ -33,28 +33,32 @@
 <body>
     <header>
         <div>
-        <input  type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
-        <label class="darkmode" for="darkmode"><img class="sol"  src="../assets/img/sol" alt="sol"> <img class="luna" src="../assets/img/luna.jpg" alt="luna"> </label>
-        <a class="registro" href="./register.html">Registro</a>
+            
+            <a class="registro" href="../pages/register.html">Registro</a>
         </div>
         <div class="barralogo">
             <h1>Distribuidora</h1>
             <a href="../index.html" class="enlace">
-            <img src="../assets/img/logotipo-distribuidora-del-sol.png" alt="logopagina" class="logo">
-        </a>
+                <img class="logo" src="../assets/img/logotipo-distribuidora-del-sol.png" alt="logopagina" class="logo">
+            </a>
         </div>
         <nav>
+
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-        
             <ul>
-                
-                <li><a href="./empresa.html">Empresa</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./quierosercliente.html">Quiero Ser Cliente</a></li>
-                <li><a href="./catalogo.html">Catalogo</a></li>
+                <li><a class="registronav" href="../pages/register.html">Registro</a></li>
+                <li><a href="../pages/empresa.html">Empresa</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/quierosercliente.html">Quiero Ser Cliente</a></li>
+                <li><a href="../pages/catalogo.html">Catalogo</a></li>
+                <input  type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
+                <label class="darkmode" for="darkmode">
+                    <img class="sol"  src="../assets/img/sol" alt="sol">
+                    <img class="luna" src="../assets/img/luna.jpg" alt="luna">
+                </label>
             </ul>
         </nav>
     </header>
