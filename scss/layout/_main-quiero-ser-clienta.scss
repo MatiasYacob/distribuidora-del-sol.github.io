@@ -1,16 +1,18 @@
 .main-quiero-ser-cliente {
     .flexcliente {
+        
         background-color: none;
         display: flex;
         width: 100%;
         background-color: none;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
 
         .requisitos {
+            margin: 2px;
             margin-top: 50px;
-            padding: 10px;
+            padding: 5px;
             font-size: large;
             font-family: gemunu libre;
             text-align: center;

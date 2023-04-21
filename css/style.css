@@ -181,6 +181,7 @@ main {
       .main-contacto section .redes .card {
         width: 150px; }
         .main-contacto section .redes .card .card-body {
+          gap: 2px;
           display: flex;
           flex-direction: column;
           justify-content: start; }
@@ -231,10 +232,11 @@ main {
   width: 100%;
   background-color: none;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
   .main-quiero-ser-cliente .flexcliente .requisitos {
+    margin: 2px;
     margin-top: 50px;
-    padding: 10px;
+    padding: 5px;
     font-size: large;
     font-family: gemunu libre;
     text-align: center;
@@ -391,7 +393,7 @@ body.dark-mode .main-contacto .card {
       gap: 5px;
       padding: 5px;
       display: flex;
-      background-color: aqua; }
+      background-color: none; }
       .main-empresa .sucursales div {
         display: flex;
         flex-direction: column;
@@ -429,7 +431,7 @@ body.dark-mode .main-contacto .card {
         background-color: none; }
         .main-contacto section .redes .card {
           padding: 2px;
-          height: 300px;
+          height: 200px;
           width: 150px; }
           .main-contacto section .redes .card .card-body {
             display: flex;
@@ -504,6 +506,7 @@ body.dark-mode .main-contacto .card {
         width: 90%;
         background-color: none; }
         .main-contacto section .redes .card {
+          height: 200px;
           width: 150px; }
           .main-contacto section .redes .card h5 {
             text-align: center; }
@@ -612,6 +615,8 @@ body.dark-mode .main-contacto .card {
           color: #ffffff; }
     header nav #check:checked ~ ul {
       left: 0; }
+    header nav #check:checked ~ body {
+      overflow: hidden; }
   /*Darkmode del UL en mobile inicio*/
   body.dark-mode {
     background-color: var(--color-fondo); }
@@ -630,34 +635,6 @@ body.dark-mode .main-contacto .card {
       border-radius: 2%; }
     .main-register p {
       font-size: small; }
-  .main-contacto {
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    background-color: none; }
-    .main-contacto .grid-container {
-      margin-top: 80px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px; }
-      .main-contacto .grid-container .iconocontacto {
-        height: 150px;
-        padding: 10px; }
-      .main-contacto .grid-container .grid-item {
-        border: #000000 2px solid;
-        border-radius: 2%;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: none;
-        border-radius: 2%;
-        transition: 1s; }
-      .main-contacto .grid-container .btn-primary {
-        transition: 1s; }
-        .main-contacto .grid-container .btn-primary:hover {
-          color: 0;
-          transform: scale(1.2); }
   .main-quiero-ser-cliente {
     margin-top: 50px; }
     .main-quiero-ser-cliente .flexcliente {
@@ -725,13 +702,13 @@ body.dark-mode .main-contacto .card {
       gap: 5px;
       padding: 5px;
       display: block;
-      background-color: aqua; }
+      background-color: none; }
       .main-empresa .sucursales div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 5px;
-        background-color: azure;
+        background-color: none;
         text-align: center; }
         .main-empresa .sucursales div img {
           max-width: 200px;

@@ -19,11 +19,12 @@
                 
                 width: 150px;
                 .card-body{
-                    
+                    gap: 2px;
                     display: flex;
                     flex-direction: column;
                     justify-content: start;
                     .btn-primary{
+                        
                         margin-top: auto;
                     }
                 }

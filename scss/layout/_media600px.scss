@@ -28,6 +28,7 @@
                 
                 background-color: none;
                 .card{
+                    height: 200px;
                     h5{
                         text-align: center;
                     }
@@ -192,10 +193,11 @@
                 left: 0;
 
             }
+            
         }
 
     }
-
+   
     /*Darkmode del UL en mobile inicio*/
     body.dark-mode {
         background-color: var(--color-fondo);
@@ -226,46 +228,7 @@
         }
     }
 
-    .main-contacto {
-        display: flex;
-        align-items: top;
-        justify-content: center;
-        background-color: none;
-
-        .grid-container {
-            margin-top: 80px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-
-            .iconocontacto {
-                height: 150px;
-                padding: 10px;
-            }
-
-            .grid-item {
-                border: #000000 2px solid;
-                border-radius: 2%;
-                height: 150px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                background-color: none;
-                border-radius: 2%;
-                transition: 1s;
-            }
-
-            .btn-primary {
-                transition: 1s;
-
-                &:hover {
-                    color: red($color: #000000);
-                    transform: scale(1.2);
-                }
-            }
-        }
-
-    }
+    
 
     .main-quiero-ser-cliente {
         margin-top: 50px;
@@ -346,14 +309,14 @@
             gap: 5px;
             padding: 5px;
             display: block;
-            background-color: aqua;
+            background-color: none;
 
             div {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 5px;
-                background-color: azure;
+                background-color: none;
                 text-align: center;
 
                 img {
