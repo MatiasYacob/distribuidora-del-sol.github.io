@@ -13,4 +13,33 @@
     .mapa{
         padding: 10px;
     }
+    .sucursales{
+        justify-content: space-around;
+        gap: 5px;
+        padding: 5px;
+        display: flex;
+        background-color: none;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: none;
+            text-align: center;
+        img{max-width: 200px;
+            height:200px;
+            border: solid;
+            border-radius: 2px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        iframe{
+            border: solid;
+            border-radius: 2px;
+        }
+        }
+    }
 }

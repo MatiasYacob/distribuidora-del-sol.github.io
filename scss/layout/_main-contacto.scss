@@ -1,12 +1,68 @@
 .main-contacto {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 20px;
-
+    padding: 5px;
+    gap: 2px;
+    section{
+        
+        width: 80%;
+        .redes{
+            padding: 2px;
+            gap: 2px;
+            display: flex;
+            max-width:fit-content;
+            max-width:fit-content;
+            background-color: none;
+            .card{
+               
+                
+                width: 150px;
+                .card-body{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    .btn-primary{
+                        margin-top: auto;
+                    }
+                }
+                img{
+                    height: 100px;
+                }
+            }
+            
+        }
+    
+        .container{
+            
+            border-radius: 2%;
+            
+            padding: 5px;
+            gap: 2px;
+            
+            height: fit-content;
+            .btn{
+                float: right;
+                width: 200px;
+            }
+        }
+    }
     .grid-container {
+        padding: 5px;
+        
+        border-radius: 2%;
         display: flex;
         flex-direction: row;
         gap: 10px;
+        background-color: none;
+        .card{
+            
+            padding: 2px;
+            width: 18rem;
+            height: fit-content;
+            background-color: none;
+        }
 
         .iconocontacto {
             height: 150px;

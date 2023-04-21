@@ -94,8 +94,11 @@ header nav {
 
 /*Mixins y functions*/
 /*Mains*/
+main {
+  min-height: 900px; }
+
 .main-index {
-  padding: 20px; }
+  padding: 10px; }
   .main-index .news-card {
     display: flex;
     flex-direction: row;
@@ -156,18 +159,55 @@ header nav {
   padding: 15px; }
   .main-register .caja-registro {
     margin-top: 0;
-    border: solid 2px black;
+    border: solid 2px;
     width: 40%;
     border-radius: 2%; }
 
 .main-contacto {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 20px; }
+  padding: 5px;
+  gap: 2px; }
+  .main-contacto section {
+    width: 80%; }
+    .main-contacto section .redes {
+      padding: 2px;
+      gap: 2px;
+      display: flex;
+      max-width: fit-content;
+      max-width: fit-content;
+      background-color: none; }
+      .main-contacto section .redes .card {
+        width: 150px; }
+        .main-contacto section .redes .card .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: start; }
+          .main-contacto section .redes .card .card-body .btn-primary {
+            margin-top: auto; }
+        .main-contacto section .redes .card img {
+          height: 100px; }
+    .main-contacto section .container {
+      border-radius: 2%;
+      padding: 5px;
+      gap: 2px;
+      height: fit-content; }
+      .main-contacto section .container .btn {
+        float: right;
+        width: 200px; }
   .main-contacto .grid-container {
+    padding: 5px;
+    border-radius: 2%;
     display: flex;
     flex-direction: row;
-    gap: 10px; }
+    gap: 10px;
+    background-color: none; }
+    .main-contacto .grid-container .card {
+      padding: 2px;
+      width: 18rem;
+      height: fit-content;
+      background-color: none; }
     .main-contacto .grid-container .iconocontacto {
       height: 150px;
       padding: 10px; }
@@ -231,6 +271,31 @@ header nav {
     line-height: normal; }
   .main-empresa .mapa {
     padding: 10px; }
+  .main-empresa .sucursales {
+    justify-content: space-around;
+    gap: 5px;
+    padding: 5px;
+    display: flex;
+    background-color: none; }
+    .main-empresa .sucursales div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      background-color: none;
+      text-align: center; }
+      .main-empresa .sucursales div img {
+        max-width: 200px;
+        height: 200px;
+        border: solid;
+        border-radius: 2px;
+        transition: 0.5s; }
+        .main-empresa .sucursales div img:hover {
+          transform: scale(1.1); }
+      .main-empresa .sucursales div iframe {
+        border: solid;
+        border-radius: 2px; }
 
 /*Footer*/
 footer {
@@ -297,27 +362,212 @@ body.dark-mode .barralogo h1 {
 body.dark-mode header p {
   color: var(--colortexto); }
 
+body.dark-mode .main-contacto .card {
+  background-color: var(--colorfondo); }
+
 /* media-querry*/
 @media (max-width: 850px) {
   header nav ul li a {
     font-size: 18px;
-    padding: 0; } }
+    padding: 0; }
+  .main-empresa {
+    padding: 10px; }
+    .main-empresa h1 {
+      font-family: "gemunu libre";
+      font-size: 35px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: normal; }
+    .main-empresa h2 {
+      font-family: "gemunu libre";
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: normal; }
+    .main-empresa .mapa {
+      padding: 10px; }
+    .main-empresa .sucursales {
+      justify-content: space-around;
+      gap: 5px;
+      padding: 5px;
+      display: flex;
+      background-color: aqua; }
+      .main-empresa .sucursales div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: azure;
+        text-align: center; }
+        .main-empresa .sucursales div img {
+          max-width: 150px;
+          max-height: 200px;
+          border: solid;
+          border-radius: 2px; }
+        .main-empresa .sucursales div iframe {
+          border: solid;
+          border-radius: 2px;
+          max-width: 150px;
+          max-height: 200px; }
+  .main-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    gap: 2px; }
+    .main-contacto section {
+      width: 80%; }
+      .main-contacto section .redes {
+        padding: 2px;
+        gap: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: fit-content;
+        max-width: fit-content;
+        background-color: none; }
+        .main-contacto section .redes .card {
+          padding: 2px;
+          height: 300px;
+          width: 150px; }
+          .main-contacto section .redes .card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: start; }
+            .main-contacto section .redes .card .card-body .btn-primary {
+              margin-top: auto; }
+          .main-contacto section .redes .card img {
+            height: 100px; }
+      .main-contacto section .container {
+        border-radius: 2%;
+        padding: 5px;
+        gap: 2px;
+        height: fit-content; }
+        .main-contacto section .container .btn {
+          float: right;
+          width: 200px; }
+    .main-contacto .grid-container {
+      padding: 5px;
+      border-radius: 2%;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      background-color: none; }
+      .main-contacto .grid-container .card {
+        padding: 2px;
+        width: 18rem;
+        height: fit-content;
+        background-color: none; }
+      .main-contacto .grid-container .iconocontacto {
+        height: 150px;
+        padding: 10px; }
+      .main-contacto .grid-container .grid-item {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: none;
+        border-radius: 2%;
+        transition: 1s; }
+      .main-contacto .grid-container .btn-primary {
+        transition: 1s; }
+        .main-contacto .grid-container .btn-primary:hover {
+          color: 0;
+          transform: scale(1.2); } }
 
 @media (max-width: 600px) {
-  main {
-    padding-top: 120px; }
+  .main-contacto {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    gap: 2px; }
+    .main-contacto section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: none;
+      width: 100%; }
+      .main-contacto section .redes {
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 2px;
+        gap: 5px;
+        display: flex;
+        max-width: 100%;
+        width: 90%;
+        background-color: none; }
+        .main-contacto section .redes .card {
+          width: 150px; }
+          .main-contacto section .redes .card h5 {
+            text-align: center; }
+          .main-contacto section .redes .card p {
+            text-align: center; }
+          .main-contacto section .redes .card .card-body {
+            padding: 1px; }
+            .main-contacto section .redes .card .card-body .btn-primary {
+              align-self: center;
+              width: 120px; }
+          .main-contacto section .redes .card img {
+            align-self: center;
+            height: 100px;
+            width: 100px; }
+      .main-contacto section .container {
+        border-radius: 2%;
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+        gap: 2px;
+        margin: 0;
+        height: fit-content; }
+        .main-contacto section .container .btn {
+          float: right;
+          width: 200px; }
+    .main-contacto .grid-container {
+      padding: 5px;
+      border-radius: 2%;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      background-color: none; }
+      .main-contacto .grid-container .card {
+        padding: 2px;
+        width: 18rem;
+        height: fit-content;
+        background-color: none; }
+      .main-contacto .grid-container .grid-item {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: none;
+        border-radius: 2%;
+        transition: 1s; }
+      .main-contacto .grid-container .btn-primary {
+        transition: 1s; }
+        .main-contacto .grid-container .btn-primary:hover {
+          color: 0;
+          transform: scale(1.2); }
   header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000; }
+    header div {
+      display: none; }
     header .registro {
       display: none; }
     header .barralogo {
       display: flex;
       flex-direction: column;
-      height: 40px;
+      height: 0px;
       justify-content: center;
       padding: 0; }
       header .barralogo h1 {
@@ -325,7 +575,7 @@ body.dark-mode header p {
       header .barralogo a .logo {
         height: 120px;
         border-radius: 50%;
-        margin-top: 120px;
+        margin-top: 80px;
         transition: 1.5s;
         background-color: none; }
         header .barralogo a .logo:hover {
@@ -340,7 +590,7 @@ body.dark-mode header p {
       width: 100%;
       height: 120vh;
       background: #F6FB04;
-      top: 150px;
+      top: 80px;
       left: -100%;
       text-align: center;
       transition: all .5s; }
@@ -374,7 +624,7 @@ body.dark-mode header p {
     align-items: center;
     padding: 15px; }
     .main-register .caja-registro {
-      margin-top: 150px;
+      margin-top: 80px;
       border: solid 2px black;
       width: 80%;
       border-radius: 2%; }
@@ -386,7 +636,7 @@ body.dark-mode header p {
     justify-content: center;
     background-color: none; }
     .main-contacto .grid-container {
-      margin-top: 150px;
+      margin-top: 80px;
       display: flex;
       flex-direction: column;
       gap: 15px; }
@@ -408,38 +658,40 @@ body.dark-mode header p {
         .main-contacto .grid-container .btn-primary:hover {
           color: 0;
           transform: scale(1.2); }
-  .main-quiero-ser-cliente .flexcliente {
-    background-color: var(--color-fondo);
-    display: flex;
-    width: 100%;
-    background-color: none;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .main-quiero-ser-cliente .flexcliente .requisitos {
-      margin: 2px;
-      margin-top: 50px;
-      padding: 5px;
-      font-size: large;
-      font-family: gemunu libre;
-      text-align: center;
-      border: 2px black solid;
-      height: fit-content;
-      width: 50%; }
-      .main-quiero-ser-cliente .flexcliente .requisitos h2 {
-        color: red; }
-      .main-quiero-ser-cliente .flexcliente .requisitos .firma {
-        font-family: titulo;
-        font-size: 25px;
-        float: right;
-        margin-top: 60px; }
-    .main-quiero-ser-cliente .flexcliente .container {
-      margin: 10px;
-      width: 200px;
-      border: 2px black solid;
-      padding: 10px; }
+  .main-quiero-ser-cliente {
+    margin-top: 50px; }
+    .main-quiero-ser-cliente .flexcliente {
+      background-color: var(--color-fondo);
+      display: flex;
+      width: 100%;
+      background-color: none;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .main-quiero-ser-cliente .flexcliente .requisitos {
+        margin: 5px;
+        margin-top: 50px;
+        padding: 5px;
+        font-size: large;
+        font-family: gemunu libre;
+        text-align: center;
+        border: 2px black solid;
+        height: fit-content;
+        width: 50%; }
+        .main-quiero-ser-cliente .flexcliente .requisitos h2 {
+          color: red; }
+        .main-quiero-ser-cliente .flexcliente .requisitos .firma {
+          font-family: titulo;
+          font-size: 25px;
+          float: right;
+          margin-top: 60px; }
+      .main-quiero-ser-cliente .flexcliente .container {
+        margin: 10px;
+        width: 200px;
+        border: 2px black solid;
+        padding: 10px; }
   .main-empresa {
     padding: 10px;
-    margin-top: 150px; }
+    margin-top: 80px; }
     .main-empresa h1 {
       font-family: "gemunu libre";
       font-size: 25px;
@@ -451,4 +703,97 @@ body.dark-mode header p {
       font-size: 15px;
       font-weight: normal;
       font-style: normal;
-      line-height: normal; } }
+      line-height: normal; }
+  .main-empresa {
+    padding: 10px; }
+    .main-empresa h1 {
+      font-family: "gemunu libre";
+      font-size: 35px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: normal; }
+    .main-empresa h2 {
+      font-family: "gemunu libre";
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: normal; }
+    .main-empresa .mapa {
+      padding: 10px; }
+    .main-empresa .sucursales {
+      justify-content: space-around;
+      gap: 5px;
+      padding: 5px;
+      display: block;
+      background-color: aqua; }
+      .main-empresa .sucursales div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: azure;
+        text-align: center; }
+        .main-empresa .sucursales div img {
+          max-width: 200px;
+          max-height: 200px;
+          border: solid;
+          border-radius: 2px; }
+        .main-empresa .sucursales div iframe {
+          border: solid;
+          border-radius: 2px;
+          max-width: 200px;
+          max-height: 200px; }
+  .main-index {
+    margin-top: -50px; }
+    .main-index .news-card {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+      .main-index .news-card img {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 20px; }
+      .main-index .news-card .carousel {
+        text-align: center;
+        background-color: none;
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 20px;
+        background-color: #008CBA; }
+      .main-index .news-card .news-info h2 {
+        font-size: 24px;
+        margin: 0 0 10px 0; }
+      .main-index .news-card .news-info p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 20px 0; }
+      .main-index .news-card .read-more {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #008CBA;
+        color: #FFF;
+        border-radius: 5px;
+        text-decoration: none; }
+        .main-index .news-card .read-more:hover {
+          background-color: #005F6B; } }
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .main-index {
+    padding-top: 150px; }
+    .main-index .news-card {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+      .main-index .news-card img {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 20px; } }

@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="lavadero, filtros, lubricante, automotor, detailing, mayorista, fullcar, lubricentro, ">
+    <meta name="keywords"
+        content="lavadero, filtros, lubricante, automotor, detailing, mayorista, fullcar, lubricentro, ">
     <!-- Seo -->
 
-    <meta name="description" content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
+    <meta name="description"
+        content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
     <meta name="author" content="matiasyacob@hotmail.com">
     <meta name="copyright" content="Distribudora Del Sol">
     <meta name="robots" content="noindex">
@@ -17,10 +19,11 @@
     <meta property="og:title" content="Distribuidora Del Sol">
     <meta property="og:site_name" content="Distribuidora Del Sol Web">
     <meta property="og:url" content=n/a>
-    <meta property="og:description" content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
+    <meta property="og:description"
+        content="Todo para cuidado y mantenimiento de tu auto en nuestra tienda. Cosmetica, Lubricantes, lámparas, filtros y más. Al por mayor y menor. ¡Compra ya!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="../assets/img/logotipo-distribuidora-del-sol.png">  
-    
+    <meta property="og:image" content="../assets/img/logotipo-distribuidora-del-sol.png">
+
     <title>Del Sol | Contacto</title>
     <link rel="shortcut icon" href="../assets/img/logotipo-distribuidora-del-sol.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -34,7 +37,7 @@
 <body>
     <header>
         <div>
-            
+
             <a class="registro" href="../pages/register.html">Registro</a>
         </div>
         <div class="barralogo">
@@ -55,9 +58,9 @@
                 <li><a href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/quierosercliente.html">Quiero Ser Cliente</a></li>
                 <li><a href="../pages/catalogo.html">Catalogo</a></li>
-                <input  type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
+                <input type="checkbox" id="darkmode" onchange="document.body.classList.toggle('dark-mode')">
                 <label class="darkmode" for="darkmode">
-                    <img class="sol"  src="../assets/img/sol" alt="sol">
+                    <img class="sol" src="../assets/img/sol" alt="sol">
                     <img class="luna" src="../assets/img/luna.jpg" alt="luna">
                 </label>
             </ul>
@@ -65,26 +68,113 @@
     </header>
 
     <main class="main-contacto">
-        <!-- aca use grids y los botones de boostrap que use para el formulario de registro -->
-        <div class="grid-container">
-            <div class="grid-item2"></div>
-            <div class="grid-item"><img class="iconocontacto" src="../assets/img/image.png" alt="icono-facebook">
-                <a href="http://www.facebook.com/DelSolDistribuciones" class="btn btn-primary">Facebook</a>
+        <section>
+            <div class="container card">
+
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label ">Nombre:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Archivo Adjuntos:</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea id="mensaje" cols="30" rows="10" name="Mensaje" required
+                            class="form-control"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+
+                </form>
             </div>
-            <div class="grid-item2"></div>
-            <div class="grid-item2"></div>
-            <div class="grid-item"><img class="iconocontacto" src="../assets/img/900px-Instagram_icon.png" alt="icono-instagram">
-                <a href="https://www.instagram.com/delsoldistribuidora" class="btn btn-primary">Instagram</a>
+            <div class="redes">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Whatsapp</h5>
+                        <img src="../assets/img/whatsap.png" alt="whatsapp">
+                        <p class="card-text">Escribinos a Whatsapp</p>
+                        <a href="#" class="btn btn-primary">Escribir</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Instagram</h5>
+                        <img src="../assets/img/900px-Instagram_icon.png" alt="">
+                        <p class="card-text">Seguinos en instagram </p>
+                        <a href="#" class="btn btn-primary">Seguinos!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Facebook</h5>
+                        <img src="../assets/img/pngegg.png" alt="facebook">
+                        <p class="card-text">Seguinos en Facebook </p>
+                        <a href="#" class="btn btn-primary">Seguinos!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Email</h5>
+                        <img src="../assets/img/email.png" alt="icono-carta">
+                        <p class="card-text">Escribinos un correo electronico</p>
+                        <a class="btn-primary btn" href="mailto:distribuidoradelsol@yahoo.com.ar">Enviar Email</a>
+                    </div>
+                </div>
             </div>
-            <div class="grid-item2"></div>
-            <div class="grid-item2"></div>
-            <div class="grid-item"><img class="iconocontacto" src="../assets/img/whatsap.png" alt="icono-whatsap">
-                <a href="https://api.whatsapp.com/send?phone=5493435248895" class="btn btn-primary">Whatsap</a>
-            </div>
-            <div class="grid-item2"></div>
-        </div>
+
+
         </section>
+        <div>
+
+            <div class="card">
+                <iframe class="card-img-top"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d769.6583760866206!2d-60.50699813041352!3d-31.763968758141925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQ1JzUwLjMiUyA2MMKwMzAnMjIuOSJX!5e1!3m2!1ses-419!2sar!4v1682015634977!5m2!1ses-419!2sar" 
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Local O'Higgins</h5>
+                    <p class="card-text">Direccion: O'Higgins 1085 Paraná E. Rios <br>Teléfono: (+54-343) 4366272 </p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <iframe class="card-img-top"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d599.796058343617!2d-60.53631752923367!3d-31.744323302457907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44d78a1335d9d%3A0xa3d8136eefc8f16f!2zQXYuIEVqw6lyY2l0byAxNDU5LCBQYXJhbsOhLCBFbnRyZSBSw61vcw!5e0!3m2!1ses-419!2sar!4v1682015120458!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Local Ejercito</h5>
+                    <p class="card-text">Direccion: Av. Ejército 1459 Paraná E. Rios <br>Teléfono: (+54-343) 4270756 </p>
+                </div>
+            </div>
+            <div class="card">
+                <iframe class="card-img-top"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1539.2684170357034!2d-60.43235437245458!3d-31.766874384270828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQ2JzAwLjgiUyA2MMKwMjUnNTMuMiJX!5e1!3m2!1ses-419!2sar!4v1682015417148!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Local San Benito</h5>
+                    <p class="card-text">Direccion: Colectora Ruta 18 - Km 12  San Benito E. Rios <br>Teléfono: (+54-343) 4979068 </p>
+                   
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     <footer>
         Disclaimer: Termly Inc is not a lawyer or a law firm and does not engage in the practice of law or provide
         legal advice or legal representation. All information, software, services, and comments provided on the site

@@ -1,6 +1,162 @@
 @media (max-width:850px) {
-header nav ul li a{
-            font-size: 18px;
-            padding: 0;
-        }  
+    header nav ul li a {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    
+    .main-empresa {
+        padding: 10px;
+
+        h1 {
+
+            @include fuente('gemunu libre', 35px, bold, italic);
+        }
+
+        h2 {
+            @include fuente('gemunu libre', 24px, );
+        }
+
+        .mapa {
+            padding: 10px;
+        }
+
+        .sucursales {
+            justify-content: space-around;
+            gap: 5px;
+            padding: 5px;
+            display: flex;
+            background-color: aqua;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 5px;
+                background-color: azure;
+                text-align: center;
+
+                img {
+                    max-width: 150px;
+                    max-height: 200px;
+                    border: solid;
+                    border-radius: 2px;
+                }
+
+                iframe {
+
+                    border: solid;
+                    border-radius: 2px;
+                    max-width: 150px;
+                    max-height: 200px;
+                }
+            }
+        }
+    }
+
+    .main-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        gap: 2px;
+
+        section {
+
+            width: 80%;
+
+            .redes {
+                padding: 2px;
+                gap: 2px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                max-width: fit-content;
+                max-width: fit-content;
+                background-color: none;
+
+                .card {
+                    padding: 2px;
+                    height: 300px;
+                    width: 150px;
+
+                    .card-body {
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+
+                        .btn-primary {
+                            margin-top: auto;
+                        }
+                    }
+
+                    img {
+                        height: 100px;
+                    }
+                }
+
+                
+            }
+
+            .container {
+
+                border-radius: 2%;
+
+                padding: 5px;
+                gap: 2px;
+
+                height: fit-content;
+
+                .btn {
+                    float: right;
+                    width: 200px;
+                }
+            }
+        }
+
+        .grid-container {
+            padding: 5px;
+            
+            border-radius: 2%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: none;
+
+            .card {
+               
+                padding: 2px;
+                width: 18rem;
+                height: fit-content;
+                background-color: none;
+            }
+
+            .iconocontacto {
+                height: 150px;
+                padding: 10px;
+            }
+
+            .grid-item {
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: none;
+                border-radius: 2%;
+                transition: 1s;
+            }
+
+            .btn-primary {
+                transition: 1s;
+
+                &:hover {
+                    color: red($color: #000000);
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+    }
 }
