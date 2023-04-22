@@ -161,6 +161,7 @@
             }
 
             ul {
+                
                 padding: 10px;
                 position: fixed;
                 width: 100%;
@@ -175,14 +176,14 @@
                     display: block;
                     margin: 5px;
                 }
-
+                
                 li {
 
                     display: block;
                     border: #000000 solid 2px;
                     background-color: #000000;
                     align-items: center;
-                    margin: 30px;
+                    margin: 5px;
                     line-height: 30px;
                     width: 85%;
 
@@ -193,6 +194,8 @@
                     a {
                         font-size: 20px;
                         color: #ffffff;
+                        display: block;
+                        margin: 5px;
                     }
 
                 }
@@ -280,6 +283,9 @@
                 width: 200px;
                 border: 2px black solid;
                 padding: 10px;
+                .btn-primary{
+                    margin: 2px;
+                }
             }
         }
     }
