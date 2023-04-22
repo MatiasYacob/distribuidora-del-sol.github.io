@@ -33,6 +33,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/lazysizes.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -69,18 +70,17 @@
         </nav>
     </header>
     <main class="main-catalogo">
-        <img src="../assets/catalogo/page-0001.jpg" alt="pagina1">
-        <img src="../assets/catalogo/page-0002.jpg" alt="pagina2">
-        <img src="../assets/catalogo/page-0003.jpg" alt="pagina3">
-        <img src="../assets/catalogo/page-0004.jpg" alt="pagina4">
-        <img src="../assets/catalogo/page-0005.jpg" alt="pagina5">
-        <img src="../assets/catalogo/page-0006.jpg" alt="pagina6">
-        <img src="../assets/catalogo/page-0007.jpg" alt="pagina7">
-        <img src="../assets/catalogo/page-0008.jpg" alt="pagina8">
-        <img src="../assets/catalogo/page-0009.jpg" alt="pagina9">
-        <img src="../assets/catalogo/page-0010.jpg" alt="pagina10">
-        <img src="../assets/catalogo/page-0011.jpg" alt="pagina11">
-
+        <img class="lazyload"   data-src="../assets/catalogo/page-0001.jpg" alt="pagina1">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0002.jpg" alt="pagina2">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0003.jpg" alt="pagina3">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0004.jpg" alt="pagina4">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0005.jpg" alt="pagina5">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0006.jpg" alt="pagina6">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0007.jpg" alt="pagina7">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0008.jpg" alt="pagina8">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0009.jpg" alt="pagina9">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0010.jpg" alt="pagina10">
+        <img class="lazyload"   data-src="../assets/catalogo/page-0011.jpg" alt="pagina11">
     </main>
     <footer>
         Disclaimer: Termly Inc is not a lawyer or a law firm and does not engage in the practice of law or provide
@@ -88,9 +88,11 @@
         are for informational and self-help purposes only and are not intended to be a substitute for professional
         legal advice. Use of this site is subject to our Terms of Use.
     </footer>
+    <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
