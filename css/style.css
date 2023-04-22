@@ -299,6 +299,14 @@ main {
         border: solid;
         border-radius: 2px; }
 
+.main-catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-catalogo img {
+    width: 80%; }
+
 /*Footer*/
 footer {
   background-color: #000000;
@@ -479,6 +487,14 @@ body.dark-mode .main-contacto .card {
           transform: scale(1.2); } }
 
 @media (max-width: 600px) {
+  .main-catalogo {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-catalogo img {
+      width: 80%; }
   .main-contacto {
     margin-top: 100px;
     display: flex;
@@ -615,8 +631,6 @@ body.dark-mode .main-contacto .card {
           color: #ffffff; }
     header nav #check:checked ~ ul {
       left: 0; }
-    header nav #check:checked ~ body {
-      overflow: hidden; }
   /*Darkmode del UL en mobile inicio*/
   body.dark-mode {
     background-color: var(--color-fondo); }
