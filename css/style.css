@@ -494,7 +494,7 @@ body.dark-mode .main-contacto .card {
     justify-content: center;
     align-items: center; }
     .main-catalogo img {
-      width: 80%; }
+      width: 100%; }
   .main-contacto {
     margin-top: 100px;
     display: flex;
